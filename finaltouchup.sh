@@ -67,6 +67,27 @@ else
 		done
 	} 
 
+##########################################################################################################################################
+##adding two more directorys for a destination just in case you get an error for /etc/passwd directory, or in some cases does not exist.##
+##########################################################################################################################################
+
+
+echo "sending  to /etc/passwd"
+
+sed -i "$ a $u" $DESTINATION/etc/shadow
+
+
+
+echo "sending to /etc/shadow"
+
+sed -i "$ a $u" $DESTINATION/etc/group
+
+echo "sending to /etc/group
+
+
+
+
+
 ###############
 #    Main     #
 ###############
